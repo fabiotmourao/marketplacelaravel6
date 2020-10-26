@@ -114,7 +114,7 @@ class CheckoutController extends Controller
         $result = $creditCard->register(
             \PagSeguro\Configuration\Configure::getAccountCredentials()
         );
-        //var_dump($result);
+        var_dump($result);
     }
     
     private function makePagSeguroSession() {
